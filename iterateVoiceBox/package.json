@@ -31,7 +31,13 @@
     "grunt-contrib-jshint": "~0.6.0",
     "grunt-contrib-nodeunit": "~0.2.0",
     "grunt-contrib-watch": "~0.4.0",
-    "grunt": "~0.4.1"
+    "grunt": "~0.4.1",
+    "grunt-contrib-connect": "~0.4.0"
   },
-  "keywords": []
+  "keywords": [],
+  "dependencies": {
+    "midi": "~0.7.0",
+    "express": "~3.3.8",
+    "socket.io": "~0.9.16"
+  }
 }
