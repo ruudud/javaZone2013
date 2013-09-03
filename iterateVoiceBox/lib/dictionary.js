@@ -28,4 +28,4 @@ exports.words = [
     'med',
     'as',
     'du'
-]
+] ;

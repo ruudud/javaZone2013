@@ -23,16 +23,15 @@ var iterate_voice_box = require('../lib/iterate-voice-box.js');
 */
 
 
-exports['huh'] = {
+exports['Tests the iterate voice box implementation'] = {
   setUp: function(done) {
     // setup here
     done();
   },
   'no args': function(test) {
-    test.expect(1);
     // tests here
-    iterate_voice_box.socket();
-    test.equal('1', '1', 'beeen tooo long');
+    test.expect(1);
+    test.ok(iterate_voice_box.listen, "listen should be defined");
     test.done();
   }
 };
