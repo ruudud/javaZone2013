@@ -14,3 +14,5 @@ My laptop will have enough resources to support user controlled loop playback an
 I think it will be captivating... monotonic tweets being read out with instrumental chaos in the background... perhaps the sound of a world without Java
 
 Architecture is still based around Node.js with Socket.io.. We could add some kind of REST API as well if needed.. It would be great if we got several services doing the same thing written in some different languages... we could even have a competition for the one which controls the VoiceBox in the most natural way!
+
+Inspiration taken from @sksmatt [nodejs-ableton-piano](https://github.com/sksmatt/nodejs-ableton-piano)
