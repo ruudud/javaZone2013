@@ -25,4 +25,9 @@ public class WordMapper {
         Gson gson = new Gson();
         wordMap =  gson.fromJson(wordList, new TypeToken<Map<String, Note>>(){}.getType());
     }
+
+    public String toJson(Note iterateNote) {
+        Gson gson = new Gson();
+        return gson.toJson(iterateNote);
+    }
 }
