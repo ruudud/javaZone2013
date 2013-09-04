@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>no.iterate.javazone</groupId>
-  <artifactId>tweetDownloader</artifactId>
+  <artifactId>tweetTokenizer</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>tweetDownloader</name>
+  <name>tweetTokenizer</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -16,15 +16,9 @@
 
   <dependencies>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.10</version>
     </dependency>
-  <dependency>
-      <groupId>org.twitter4j</groupId>
-      <artifactId>twitter4j-core</artifactId>
-      <version>3.0.3</version>
-  </dependency>
   </dependencies>
 </project>

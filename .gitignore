@@ -5,3 +5,4 @@ atlassian-ide-plugin.xml
 iterateVoiceBox.iml
 *.iml
 target/
+twitter4j.properties

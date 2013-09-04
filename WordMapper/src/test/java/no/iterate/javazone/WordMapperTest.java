@@ -52,5 +52,14 @@ public class WordMapperTest {
 
         assertEquals(22, iterateNote.getNote());
         assertEquals(34, iterateNote.getVelocity());
+        assertEquals(1, iterateNote.getChannel());
+    }
+
+    @Test
+    public void createNoteJson() {
+        Note iterateNote = wordMapper.getWords().get("Iterate");
+
+        assertEquals("{\"note\":22,\"velocity\":34,\"channel\":1}", wordMapper.toJson(iterateNote));
+
     }
 }
