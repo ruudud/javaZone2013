@@ -11,9 +11,13 @@ import java.util.List;
 public class TweetDownloader
 {
     public static void main(String[] args) {
+        searchForTweet("javazone");
+    }
+
+    private static void searchForTweet(String searchQuery) {
         Twitter twitter = new TwitterFactory().getInstance();
         try {
-            Query query = new Query("javazone");
+            Query query = new Query(searchQuery);
             QueryResult result;
             result = twitter.search(query);
             List<Status> tweets = result.getTweets();
