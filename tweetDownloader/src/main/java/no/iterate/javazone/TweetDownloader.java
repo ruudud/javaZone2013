@@ -22,7 +22,7 @@ public class TweetDownloader
             result = twitter.search(query);
             List<Status> tweets = result.getTweets();
             for (Status tweet : tweets) {
-                // Tokenize
+                // TODO: Tokenize
                 String tweetText = tweet.getText();
                 System.out.println(tweetText);
             }
