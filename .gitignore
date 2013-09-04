@@ -3,3 +3,4 @@ node_modules/
 .jshintrc
 atlassian-ide-plugin.xml
 iterateVoiceBox.iml
+*.iml
