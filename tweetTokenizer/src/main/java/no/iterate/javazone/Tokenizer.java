@@ -7,8 +7,8 @@ public class Tokenizer {
             return null;
         }
 
-        text.replaceAll("[^\\p{L}\\p{Z}]", " "); // Replaces all special signs, except for dash and exclamation mark :p
-        String[] tokenizedWords = text.split(" ");
+        String specialsStripped = text.replaceAll("[^\\p{L}\\p{Z}]", " ");
+        String[] tokenizedWords = specialsStripped.split(" ");
 
         return tokenizedWords;
     }
