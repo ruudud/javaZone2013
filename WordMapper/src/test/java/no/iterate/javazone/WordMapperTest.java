@@ -52,5 +52,6 @@ public class WordMapperTest {
 
         assertEquals(22, iterateNote.getNote());
         assertEquals(34, iterateNote.getVelocity());
+        assertEquals(1, iterateNote.getChannel());
     }
 }
