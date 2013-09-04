@@ -4,3 +4,4 @@ node_modules/
 atlassian-ide-plugin.xml
 iterateVoiceBox.iml
 *.iml
+target/
