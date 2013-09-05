@@ -3,6 +3,19 @@ var iterate = iterate || {};
 (function ($, io) {
 
     var socket = io.connect('http://' + window.location.host)
+    var pause = {note: -1, velocity: -1, channel: 1};
+    var dictionary = {};
+
+    $.ajax("http://" + window.location.host + "/words",{
+        success : function (data){
+            dictionary = data || {};
+            iterate.dictionary = data;
+        }
+    })
+
+    function map(word) {
+        return dictionary[word]
+    }
 
     /**
      * Creates a voice box instrument which has
@@ -13,9 +26,9 @@ var iterate = iterate || {};
      */
     iterate.voiceBox = function (opts){
         function playWord(word) {
-            var index = word;
-            socket.emit('notedown', {note: 0, velocity: index, channel: 1});
-            socket.emit('noteup', {note: 0, velocity: index, channel: 1});
+            var message = map(word) || pause;
+            socket.emit('notedown', message);
+            socket.emit('noteup', message);
         }
         return sequenceWithDelay(playWord, opts)
     }
