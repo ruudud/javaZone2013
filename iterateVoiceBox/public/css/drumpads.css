@@ -1,0 +1,29 @@
+/* =Drum pads
+-------------------------------------------------------------- */
+
+#drums {
+    width:400px;
+    clear:both;
+    overflow:hidden;
+    height:200px;
+    margin-top:30px;
+    position: relative;
+    cursor: pointer;
+    box-shadow:0 2px 3px rgba(0,0,0,0.3);
+}
+
+.key {
+    width:25%;
+    height:25%;
+    float:left;
+    background:white;
+    border: 1px dotted black
+}
+
+.key:active,.key.active {
+    background:brown;
+}
+
+.sharp {
+
+}
