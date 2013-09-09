@@ -6,7 +6,7 @@ var iterate = iterate || {};
     var pause = {note: -1, velocity: -1, channel: 1};
     var dictionary = {};
 
-    $.ajax("http://" + window.location.host + "/words",{
+    $.ajax("http://" + window.location.host + "/api/words",{
         success : function (data){
             dictionary = data || {};
             iterate.dictionary = data;
