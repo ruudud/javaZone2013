@@ -4,7 +4,13 @@
    Author's custom styles
    ========================================================================== */
 
+textarea{
+    width: 15em;
+    min-width:15em;
 
+    height:5em;
+    min-height:5em;
+}
 
 
 
