@@ -53,6 +53,7 @@ var iterate = iterate || {};
         return sequenceWithDelay(playDrum, opts)
     }
 
+    iterate.socket = socket;
 
     function sequenceWithDelay(func, opts) {
         if (typeof opts !== 'object')
