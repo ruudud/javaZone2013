@@ -14,7 +14,9 @@ app.use(express.static(__dirname + '/public'));
 //automatically parse post data
 app.use(express.bodyParser());
 
-server.listen(process.env.PORT || 3000)
+var port = process.env.PORT || 3000;
+server.listen(port)
+console.log('Server listening on http://localhost: ' + port);
 
 //Sets up and attaches the virtual midi ports
 midi.connect();

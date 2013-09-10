@@ -3,12 +3,19 @@
 Implementation of a voice box that can be controlled through Socket.IO or HTTP
 
 ## Getting Started
-Install the module with: `npm install iterate-voice-box`
+
+Install the module with: `npm install iterate-voice-box`.
+Notice that you need the Alsa development packages installed if running on
+Linux. (On Debian `sudo apt-get install libasound2-dev`)
 
 ```javascript
 var iterate_voice_box = require('iterate-voice-box');
 iterate_voice_box.awesome(); // "awesome"
 ```
+
+## Development
+
+Do `npm install` in the checkout directory.
 
 ## Documentation
 _(Coming soon)_
